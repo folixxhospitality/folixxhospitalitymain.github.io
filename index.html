@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>exported project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+      color: inherit;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    details {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    [data-thq="accordion"] [data-thq="accordion-content"] {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      padding: 0;
+    }
+
+    [data-thq="accordion"] details[data-thq="accordion-trigger"][open]+[data-thq="accordion-content"] {
+      max-height: 1000vh;
+    }
+
+    details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {
+      transform: rotate(180deg);
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-theme-neutral-dark);
+      background: var(--dl-color-theme-neutral-light);
+
+      fill: var(--dl-color-theme-neutral-dark);
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
+</head>
+
+<body>
+  <link rel="stylesheet" href="./style.css" />
+  <div>
+    <link href="./index.css" rel="stylesheet" />
+
+    <div class="frame185916-container">
+      <div class="frame185916-frame185916">
+        <div class="frame185916-home">
+          <div class="frame185916-nav">
+            <div class="frame185916-frame36">
+              <img alt="Union1215" src="public/external/union1215-2lj8.svg" class="frame185916-union" />
+              <span class="frame185916-text10">FOLIXX</span>
+            </div>
+            <div class="frame185916-frame391">
+              <div class="frame185916-frame37">
+                <span class="frame185916-text11">About Us</span>
+                <img alt="chevrondown1216" src="public/external/chevrondown1216-rp8a.svg"
+                  class="frame185916-chevrondown1" />
+              </div>
+              <div class="frame185916-frame411">
+                <span class="frame185916-text12">Subsidiaries</span>
+                <img alt="chevrondown1216" src="public/external/chevrondown1216-zzcj.svg"
+                  class="frame185916-chevrondown2" />
+              </div>
+              <div class="frame185916-frame40">
+                <span class="frame185916-text13">Contact Us</span>
+              </div>
+              <div class="frame185916-frame392">
+                <span class="frame185916-text14">Careers</span>
+              </div>
+            </div>
+            <div class="frame185916-frame412">
+              <span class="frame185916-text15 navtextbold">Reach Out</span>
+            </div>
+          </div>
+          <div class="frame185916-hero">
+            <div class="frame185916-frame185887">
+              <div class="frame185916-frame451">
+                <span class="frame185916-text16">
+                  Welcome to FoliXx Hospitality
+                </span>
+              </div>
+              <div class="frame185916-frame185886">
+                <div class="frame185916-frame42">
+                  <span class="frame185916-text17">
+                    Where Comfort Meets Serenity
+                  </span>
+                  <span class="frame185916-text18">
+                    Immerse yourself in tranquility, where our dedicated team
+                    is here to provide exceptional service tailored just for
+                    you.
+                  </span>
+                </div>
+                <div class="frame185916-frame471">
+                  <div class="frame185916-frame431">
+                    <span class="frame185916-text19">Our Services</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame185916-placeholder-lightbox1">
+              <img alt="image11218" src="public/external/image11218-hyd-600w.png" class="frame185916-image1" />
+              <div class="frame185916-slider-dots">
+                <img alt="Dot1218" src="public/external/dot1218-qjsm-200h.png" class="frame185916-dot1" />
+                <img alt="Dot1219" src="public/external/dot1219-ako-200h.png" class="frame185916-dot2" />
+                <img alt="Dot1219" src="public/external/dot1219-al56-200h.png" class="frame185916-dot3" />
+                <img alt="Dot1219" src="public/external/dot1219-qiwf-200h.png" class="frame185916-dot4" />
+                <img alt="Dot1219" src="public/external/dot1219-k8ul-200h.png" class="frame185916-dot5" />
+              </div>
+              <img alt="PlayButton1219" src="public/external/playbutton1219-r9n.svg" class="frame185916-play-button1" />
+            </div>
+          </div>
+          <div class="frame185916-services1">
+            <div class="frame185916-section-title1">
+              <div class="frame185916-frame452">
+                <span class="frame185916-text20">Why FoliXx</span>
+              </div>
+              <span class="frame185916-text21">
+                Tailored for Unforgettable Experiences
+              </span>
+            </div>
+            <div class="frame185916-frame1858931">
+              <div class="frame185916-content1">
+                <div class="frame185916-frame1858471">
+                  <img alt="executivemanagersanalyzingmarketingstatisticstable1220"
+                    src="public/external/executivemanagersanalyzingmarketingstatisticstable1220-erx6-300h.png"
+                    class="frame185916-executivemanagersanalyzingmarketingstatisticstable1" />
+                  <div class="frame185916-section-title2">
+                    <div class="frame185916-frame185897">
+                      <span class="frame185916-text22">
+                        Diverse Experiences
+                      </span>
+                      <span class="frame185916-text23">
+                        FoLiXx Hospitality delivers a complete lifestyle
+                        experience, offering everything from lively nights at
+                        Secrets Palace to relaxed evenings at FoLiXx
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame185916-content2">
+                <div class="frame185916-frame1858472">
+                  <div class="frame185916-section-title3">
+                    <img alt="executivemanagersanalyzingmarketingstatisticstable1221"
+                      src="public/external/executivemanagersanalyzingmarketingstatisticstable1221-hdr-300h.png"
+                      class="frame185916-executivemanagersanalyzingmarketingstatisticstable2" />
+                    <div class="frame185916-frame185895">
+                      <span class="frame185916-text24">
+                        High-Quality Service
+                      </span>
+                      <span class="frame185916-text25">
+                        We focus on providing a premium experience from the
+                        moment you step in. Our attentive team ensures that
+                        every guest feels welcome and valued.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="frame185916-content3">
+                <div class="frame185916-frame1858473">
+                  <div class="frame185916-frame185770">
+                    <div class="frame185916-section-title4">
+                      <img alt="executivemanagersanalyzingmarketingstatisticstable1222"
+                        src="public/external/executivemanagersanalyzingmarketingstatisticstable1222-33xp-300h.png"
+                        class="frame185916-executivemanagersanalyzingmarketingstatisticstable3" />
+                      <div class="frame185916-frame185896">
+                        <span class="frame185916-text26">
+                          Unmatched Ambiance with Luxury
+                        </span>
+                        <span class="frame185916-text27">
+                          We combine elegance, warmth, and comfort with
+                          affordability. Our thoughtfully designed spaces
+                          create
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame185916-frame185898">
+            <img alt="Rectangle51341222" src="public/external/rectangle51341222-5gio-200h.png"
+              class="frame185916-rectangle5134" />
+            <img alt="Rectangle51371222" src="public/external/rectangle51371222-6mzm-200h.png"
+              class="frame185916-rectangle5137" />
+            <img alt="Rectangle51351222" src="public/external/rectangle51351222-80t4-200h.png"
+              class="frame185916-rectangle5135" />
+            <img alt="Rectangle51361222" src="public/external/rectangle51361222-4hqj-200h.png"
+              class="frame185916-rectangle5136" />
+            <div class="frame185916-services2">
+              <div class="frame185916-section-title5">
+                <div class="frame185916-frame453">
+                  <span class="frame185916-text28">Subsidiaries</span>
+                </div>
+                <span class="frame185916-text29">
+                  Experience FoLiXx Hospitality
+                </span>
+                <div class="frame185916-categories">
+                  <button class="frame185916-button1">
+                    <span class="frame185916-text30">Secret Palace</span>
+                  </button>
+                  <button class="frame185916-button2">
+                    <span class="frame185916-text31">The Glass House</span>
+                  </button>
+                  <button class="frame185916-button3">
+                    <span class="frame185916-text32">Folixx Bukka</span>
+                  </button>
+                </div>
+              </div>
+              <div class="frame185916-content4">
+                <div class="frame185916-frame185894">
+                  <div class="frame185916-content5">
+                    <div class="frame185916-content6">
+                      <div class="frame185916-section-title6">
+                        <div class="frame185916-content7">
+                          <span class="frame185916-text33">
+                            Experience Royalty at Secrets Palace
+                          </span>
+                          <span class="frame185916-text34">
+                            <span>
+                              Welcome to Secrets Palace, where every guest is
+                              treated like royalty.
+                            </span>
+                            <br />
+                            <span>
+                              Our discreet and luxurious gentlemen's club in
+                              Lagos offers unmatched entertainment by our
+                              daughters of Zion, Experience the ultimate
+                              nightlife experience, blending luxury, privacy,
+                              and excitement. With local and international
+                              music, world-class DJs, and a chic ambiance,
+                              every night at Secrets Palace is unforgettable.
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="frame185916-frame1858932">
+                      <div class="frame185916-frame472">
+                        <div class="frame185916-frame432">
+                          <span class="frame185916-text38">
+                            Visit Secret Palace
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frame185916-placeholder-lightbox2">
+                    <img alt="PlayButton1225" src="public/external/playbutton1225-1za6.svg"
+                      class="frame185916-play-button2" />
+                    <img alt="PlayButton1225" src="public/external/playbutton1225-1tg.svg"
+                      class="frame185916-play-button3" />
+                    <img alt="image21225" src="public/external/image21225-dehe-500h.png" class="frame185916-image2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img alt="folixxhospitalitycom21226" src="public/external/folixxhospitalitycom21226-g7r-600h.png"
+            class="frame185916-folixxhospitalitycom2" />
+        </div>
+        <div class="frame185916-titlebar"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
