@@ -1,3 +1,11 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Ensures black background covers full screen */
+  overflow-x: hidden;
+}
+
 :root {
   --dl-size-size-large: 144px;
   --dl-size-size-small: 48px;
