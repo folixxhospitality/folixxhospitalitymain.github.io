@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoLiXx Hospitality</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background-color: #000;
+            min-height: 100vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #ff0000;
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .cta-button {
+            background-color: #ff0000;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .image-slider {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .slide-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            margin: 0 4px;
+            cursor: pointer;
+        }
+        
+        .dot.active {
+            background: #ff0000;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+            
+            .mobile-menu-button {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <header class="fixed w-full bg-black bg-opacity-90 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="/api/placeholder/120/40" alt="FoLiXx Logo" class="h-8">
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#" class="nav-link">Subsidiaries</a>
+                <a href="#" class="nav-link">Contact Us</a>
+                <a href="#" class="nav-link">Careers</a>
+                <button class="cta-button px-6 py-2 rounded-full text-white">Reach Out</button>
+            </div>
+            
+            <button class="mobile-menu-button md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"/>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section flex items-center">
+            <div class="container mx-auto px-6">
+                <div class="hero-content flex items-center justify-between">
+                    <div class="w-full md:w-1/2 space-y-6">
+                        <div class="inline-block px-4 py-1 bg-white bg-opacity-10 rounded-full text-sm">
+                            Welcome to FoLiXx Hospitality
+                        </div>
+                        <h1 class="text-5xl md:text-6xl font-bold">Where Comfort<br>Meets Serenity</h1>
+                        <p class="text-gray-300 text-lg max-w-md">
+                            Immerse yourself in tranquility, where our dedicated team is here to provide exceptional service tailored just for you.
+                        </p>
+                        <button class="cta-button px-8 py-3 rounded-full text-white text-lg">
+                            Our Services
+                        </button>
+                    </div>
+                    
+                    <div class="hidden md:block w-1/2">
+                        <div class="image-slider rounded-3xl overflow-hidden">
+                            <img src="/api/placeholder/600/400" alt="Team" class="w-full">
+                            <div class="slide-dots flex">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="inline-block px-4 py-1 bg-white bg-opacity-10 rounded-full text-sm mb-4">
+                        Why FoLiXx
+                    </span>
+                    <h2 class="text-4xl font-bold">Tailored for Unforgettable Experiences</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="space-y-4">
+                        <img src="/api/placeholder/400/300" alt="Diverse Experiences" class="w-full rounded-2xl">
+                        <h3 class="text-2xl font-bold">Diverse Experiences</h3>
+                        <p class="text-gray-300">
+                            FoLiXx Hospitality delivers a complete lifestyle experience, offering everything from lively nights at Secrets Palace to relaxed evenings at FoLiXx.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <img src="/api/placeholder/400/300" alt="High-Quality Service" class="w-full rounded-2xl">
+                        <h3 class="text-2xl font-bold">High-Quality Service</h3>
+                        <p class="text-gray-300">
+                            We focus on providing a premium experience from the moment you step in. Our attentive team ensures that every guest feels welcome and valued.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <img src="/api/placeholder/400/300" alt="Unmatched Ambiance" class="w-full rounded-2xl">
+                        <h3 class="text-2xl font-bold">Unmatched Ambiance with Luxury</h3>
+                        <p class="text-gray-300">
+                            We combine elegance, warmth, and comfort with affordability. Our thoughtfully designed spaces create memorable experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">FOLIXX HOSPITALITY</h4>
+                    <p class="text-gray-400">FoLiXx Lounge, 142 Lekki Epe Expressway, Lekki, Lagos.</p>
+                    <p class="text-gray-400 mt-4">Phone: +2349011111000 / +2349011111000</p>
+                    <p class="text-gray-400">Email: info@folixxhospitality.com</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Useful Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Home</a></li>
+                        <li><a href="#" class="hover:text-white">About us</a></li>
+                        <li><a href="#" class="hover:text-white">Events</a></li>
+                        <li><a href="#" class="hover:text-white">Contact us</a></li>
+                        <li><a href="#" class="hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Our Business Units</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Secrets Palace</a></li>
+                        <li><a href="#" class="hover:text-white">FoLiXx Lounge</a></li>
+                        <li><a href="#" class="hover:text-white">FoLiXx Bukka</a></li>
+                        <li><a href="#" class="hover:text-white">FoLiXx Shawarma and CarWash</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Our Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to our Newsletter</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Enter your email" class="bg-white bg-opacity-10 px-4 py-2 rounded-l-full w-full">
+                        <button class="cta-button px-6 py-2 rounded-r-full">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-gray-800 text-center text-gray-400">
+                © 2018-2024 Copyright FoLiXx Hospitality. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+        
+        // Image slider functionality
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                dots.forEach(d => d.classList.remove('active'));
+                dot.classList.add('active');
+                // Add slide changing logic here
+            });
+        });
+    </script>
+</body>
+</html>
